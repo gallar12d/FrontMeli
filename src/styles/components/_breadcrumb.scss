@@ -1,0 +1,27 @@
+.lastLink {
+  font-weight: bold;
+}
+
+.breadcrumb {
+  margin: 0 auto;
+  margin-top: $margin_red;
+  margin-bottom: $margin_red;
+  width: $container_width;
+
+  & ul {
+    padding: 0px;
+    margin: 0px;
+    background-color: $search_white;
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+
+    & li a {
+      text-decoration: none;
+      & span {
+        font-size: $font_breadcrumb;
+        color: $search_gray;
+      }
+    }
+  }
+}

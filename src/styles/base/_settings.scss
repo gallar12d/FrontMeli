@@ -1,0 +1,39 @@
+$search_yellow: #ffe600;
+$search_black: #333333;
+$search_gray: #999999;
+$search_white: #eeeeee;
+$margin_red: 16px;
+$margin_green: 32px;
+$font_price_item: 24px;
+$color_price_item: #333333;
+$font_detail_item: 18px;
+$color_detail_item: #333333;
+$font_city_item: 12px;
+$color_city_item: #666666;
+$size_image: 180px;
+$rounded_image: 4px;
+$font_breadcrumb: 14px;
+$detail_image_width: 680px;
+$detail_color_blue: #3483fa;
+$detail_font_item: 46px;
+$detail_font_description_title: 28px;
+$detail_font_description: 16px;
+$container_width: 70vw;
+
+@mixin small {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (max-width: 1440px) {
+    @content;
+  }
+}
