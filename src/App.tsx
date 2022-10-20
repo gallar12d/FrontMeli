@@ -10,7 +10,6 @@ function App(): JSX.Element {
       <Routes>
         <Route path="/items" element={<Results />} />
         <Route path="/items/:id" element={<Details />} />
-        <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
     </div>
   );

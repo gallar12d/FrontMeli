@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, FC } from "react";
 import { searchApi } from "../services/searchService";
 import BreadCrumb from "./BreadCrumb";
 import { useSearchParams } from "react-router-dom";
@@ -6,7 +6,7 @@ import CardProduct from "./CardProduct";
 import ICategory from "../interfaces/ICategory";
 import IProduct from "../interfaces/IProduct";
 
-const Results = (): any => {
+const Results: FC = (): any => {
   //  const { search } = useParams();
   const [searchParams] = useSearchParams();
   const [loading, setLoading] = useState<boolean>(false);

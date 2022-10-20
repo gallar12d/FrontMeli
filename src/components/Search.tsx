@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 import searchIcon from "../assets/search.png";
 
-const Search = (): any => {
+const Search: FC = (): any => {
   //    let history = useHistory();
   const navigate = useNavigate();
 

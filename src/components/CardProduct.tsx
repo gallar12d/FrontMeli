@@ -1,3 +1,4 @@
+import { FC } from "react";
 import { Link } from "react-router-dom";
 import shipping from "../assets/shipping.png";
 import IProduct from "../interfaces/IProduct";
@@ -6,7 +7,7 @@ interface PropsCard {
   product: IProduct;
 }
 
-const CardProduct = ({ product }: PropsCard): any => {
+const CardProduct: FC<PropsCard> = ({ product }): any => {
   return (
     <Link className="decoration" to={`/items/${product.id}`}>
       <div className="cardProduct">

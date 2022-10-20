@@ -1,10 +1,11 @@
+import { FC } from 'react'
 import ICategory from '../interfaces/ICategory'
 
 interface Props {
   categories: ICategory[]
 }
 
-const BreadCrumb = ({ categories }: Props): any => {
+const BreadCrumb: FC<Props> = ({ categories }): any => {
   const renderCategories = (): any => {
     return categories.map((cat, index) => {
       if (categories[index + 1] != null) {
